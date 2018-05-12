@@ -94,12 +94,12 @@ hr {
   justify-content: center;
 }
 
-.expertise > div> span {
+.expertise-item {
   flex-basis: 33%;
   min-width: 130px;
   font-size: 2vh
 }
-.expertise > div > span > img {
+.expertise-item img {
   max-height: 10vh;
 }
 
@@ -203,7 +203,7 @@ hr {
     width: 90vw;
   }
 
-  .button-link__overlay, .description, .expertise > div > span, header, .quote {
+  .button-link__overlay, .description, .expertise-item, header, .quote {
     font-size: 1em
   }
 
