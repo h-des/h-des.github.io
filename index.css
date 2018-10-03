@@ -7,36 +7,31 @@ body {
   
 }
 
-header {
+.header {
   max-width: 60vw;
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding-top: 30px;
   font-size: 2vh;
 }
 
-footer {
-  max-height: 13vh;
-  font-size: 2vh;
-  height: 100%;
-  background: black;
-  color: white;
-  margin: auto auto;
-  text-align: center;
-  padding-top: 20px;
-  max-width: 60vw;
+
+.header__name {
+  float: left;
+  font-size: 24px;
 }
 
-footer > div > a {
-  text-decoration: none;
-  color: white;
-}
-
-
-hr {
-  width: 80%;
-  border: 1px solid #999
+.header__heading--big {
+  font-size: 10vh;
+  margin: 0 auto;
+  display: table;
+  font-weight: 700;
+  color: #333;
+  height: 110vh;
+  line-height: 90vh;
 }
 
 .flex-row {
@@ -63,30 +58,20 @@ hr {
   display: table;
 }
 
-.projects > h1 {
+.projects > h2 {
   text-align: center;
   color: #333;
 }
 
-.title-name {
-  font-size: 10vh;
-  margin: 0 auto;
-  display: table;
-  font-weight: 700;
-  color: #333;
-  height: 110vh;
-  line-height: 90vh;
-}
 
 .expertise {
-  padding-top: 200px;
   text-align: center;
   margin: 0 auto;
   width: 60vw;
   color: #333;
 }
 
-.expertise > div {
+.expertise__container {
   display: -webkit-flex;
   -webkit-flex-wrap: wrap;
   display: flex;   
@@ -94,12 +79,12 @@ hr {
   justify-content: center;
 }
 
-.expertise-item {
+.expertise__item {
   flex-basis: 33%;
   min-width: 130px;
   font-size: 2vh
 }
-.expertise-item img {
+.expertise__img {
   max-height: 10vh;
 }
 
@@ -152,7 +137,7 @@ hr {
   text-align: center; 
 }
   
-.description {
+.project__description {
   max-width: 29vw;
   padding: 0 2vw;
   font-size: 2vh;
@@ -168,7 +153,32 @@ hr {
   font-size: 2vh;
   width: 100%;
   margin: 0 auto;
-  text-align: center
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote__hr {
+  width: 80%;
+  border: 1px solid #999
+}
+
+.footer {
+  max-height: 13vh;
+  font-size: 2vh;
+  height: 100%;
+  background: black;
+  color: white;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 60vw;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: white;
 }
 
 @media screen and (max-width: 960px) {
@@ -176,25 +186,28 @@ hr {
     background-size: 120vh
   }
 
-  header {
+  .header {
     max-width: 90vw;
   }
   
-  footer {
+  .header__heading--big {
+    font-size: 6em;
+    height: 80vh;
+    line-height: 60vh;
+  }
+
+  .header__name {
+    font-size: 1.4em;
+  }
+
+  .footer {
     max-width: 100%;
   }
 
   .expertise {
-    padding-top: 0;
+    padding-top: 5rem;
   }
- 
-
-  .title-name {
-    font-size: 3em;
-    height: 80vh;
-    line-height: 60vh;
-  }
-    
+     
   .project {
     flex-direction: column;
   }
@@ -207,7 +220,7 @@ hr {
     font-size: 1em
   }
 
-  .description {
+  .project__description {
     max-width: 90vw;
     margin-top: 20px;
   }

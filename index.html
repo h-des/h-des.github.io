@@ -10,37 +10,35 @@
 </head>
 
 <body>
-  <header class="flex-row">
-    Patryk Hołysz
+  <header class="header">
+    <h2 class="header__name">Patryk Hołysz</h2>
+    <h1 class="header__heading--big">H-DES</h1>
   </header>
-  <section class="title-name">
-    H-DES
-  </section>
   <section class="expertise">
-    <h1>My expertise</h1>
-    <div>
-      <div class="expertise-item">
-        <img src="images/html5.png" alt="">
+    <h2>My expertise</h2>
+    <div class="expertise__container">
+      <div class="expertise__item">
+        <img src="images/html5.png" class="expertise__img" alt="">
         <p>HTML</p>
       </div>
-      <div class="expertise-item">
-        <img src="images/css3.png" alt="">
+      <div class="expertise__item">
+        <img src="images/css3.png"  class="expertise__img"alt="">
         <p>CSS</p>
       </div>
-      <div class="expertise-item">
-        <img src="images/js.png" alt="">
+      <div class="expertise__item">
+        <img src="images/js.png"  class="expertise__img"alt="">
         <p>Javascript (ES6)</p>
       </div>
-      <div class="expertise-item">
-        <img src="images/react.png" alt="">
+      <div class="expertise__item">
+        <img src="images/react.png" class="expertise__img" alt="">
         <p>React</p>
       </div>
-      <div class="expertise-item">
-        <img src="images/redux.png" alt="">
+      <div class="expertise__item">
+        <img src="images/redux.png" class="expertise__img" alt="">
         <p>Redux</p>
       </div>
-      <div class="expertise-item">
-        <img src="images/node_js.png" alt="">
+      <div class="expertise__item">
+        <img src="images/node_js.png" class="expertise__img" alt="">
         <p>Node.js</p>
       </div>
     </div>
@@ -54,52 +52,74 @@
           <h3>Coetus</h3>
         </div>
       </a>
-      <p class="description">
+      <p class="project__description">
         I am an originator and founder of Coetus. It is a startup that focuses on connecting programmers from around the world. It
         gives them a possibility to set up a project, find collaborators and start creating amazing things together. I have
         build back-end using Node.js and Express and major part of front-end using such techologies as React, Redux and React-router.
         Coetus is a lauerate of the "Set Up Your Start-up" competition organized by Academic Business Incubator of Poznan
         University of Technology and Faculty of Computing at Poznan University of Technology. It is currently in the testing
-        phase. Launch is planned for late March.
+        phase.
       </p>
     </div>
     <div class="project">
       <a href="https://emaily-h-des.herokuapp.com" class="button-link">
-        <img class="button-link__image " src="images/buttonimg001.jpg" alt=" ">
+        <img class="button-link__image " src="images/buttonimg004.jpg" alt=" ">
         <div class="button-link__overlay ">
           <h3>Emaily</h3>
         </div>
       </a>
-      <p class="description">
+      <p class="project__description">
         Emaily is an app built with React, Redux & Node.js. It allows user to create a campaign and send emails to a provided group
         of clients. It was styled using Materialize CSS;
       </p>
     </div>
     <div class="project">
-      <a href="https://h-des.github.io/hotel-website/" class="button-link">
+      <a href="https://github.com/h-des/V-layout" class="button-link">
         <img class="button-link__image " src="images/buttonimg002.jpg" alt=" ">
+        <div class="button-link__overlay ">
+          <h3>V_Layout</h3>
+        </div>
+      </a>
+      <p class="project__description">
+        A website recreated from a template from freebiesbug.com using SCSS.
+      </p>
+    </div>
+    <div class="project">
+      <a href="https://github.com/h-des/new-providence-layout" class="button-link">
+        <img class="button-link__image " src="images/buttonimg001.jpg" alt=" ">
+        <div class="button-link__overlay ">
+          <h3>New Providence Layout</h3>
+        </div>
+      </a>
+      <p class="project__description">
+        A website recreated from a template from craftwork.com using SCSS.
+      </p>
+    </div>
+    <div class="project">
+      <a href="https://h-des.github.io/hotel-website/" class="button-link">
+        <img class="button-link__image " src="images/buttonimg003.jpg" alt=" ">
         <div class="button-link__overlay ">
           <h3>Hotel webiste</h3>
         </div>
       </a>
-      <p class="description">
+      <p class="project__description">
         A simple hotel website created using React & React-router. Main purpose for creatig this webiste was testing and learing
         React-router & inline styles for React.
       </p>
     </div>
   </section>
-  <section class="quote flex-column">
-    <hr/>
+  <section class="quote">
+    <hr class="quote__hr"/>
     <p>
       <i>"Debugging is like being the detective in a crime movie where you are also the murderer." </i>
     </p>
     <h2> Filipe Fortes</h2>
   </section>
-  <footer>
+  <footer class="footer">
     <p>© H-DES 2018</p>
     <div>
-      <a href="https://github.com/h-des">GitHub</a>
-      <a href="https://twitter.com/holdysz">Twitter</a>
+      <a class="footer__link" href="https://github.com/h-des">GitHub</a>
+      <a class="footer__link" href="https://twitter.com/holdysz">Twitter</a>
     </div>
   </footer>
 </body>
