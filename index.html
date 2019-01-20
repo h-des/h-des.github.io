@@ -1,128 +1,168 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta
+      name="google-site-verification"
+      content="RzjgvQWC2lz4mdLNJ_YOcBHzfnn86F1Ab8JDmm5T-44"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>H-DES</title>
+  </head>
 
-<head>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta charset="utf-8"/>
-  <meta name="google-site-verification" content="RzjgvQWC2lz4mdLNJ_YOcBHzfnn86F1Ab8JDmm5T-44" />
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <title>H-DES</title>
-</head>
-
-<body>
-  <header class="header">
-    <h2 class="header__name">Patryk Hołysz</h2>
-    <h1 class="header__heading--big">H-DES</h1>
-  </header>
-  <section class="expertise">
-    <h2>My expertise</h2>
-    <div class="expertise__container">
-      <div class="expertise__item">
-        <img src="images/html5.png" class="expertise__img" alt="">
-        <p>HTML</p>
-      </div>
-      <div class="expertise__item">
-        <img src="images/css3.png"  class="expertise__img"alt="">
-        <p>CSS</p>
-      </div>
-      <div class="expertise__item">
-        <img src="images/js.png"  class="expertise__img"alt="">
-        <p>Javascript (ES6)</p>
-      </div>
-      <div class="expertise__item">
-        <img src="images/react.png" class="expertise__img" alt="">
-        <p>React</p>
-      </div>
-      <div class="expertise__item">
-        <img src="images/redux.png" class="expertise__img" alt="">
-        <p>Redux</p>
-      </div>
-      <div class="expertise__item">
-        <img src="images/node_js.png" class="expertise__img" alt="">
-        <p>Node.js</p>
-      </div>
-    </div>
-  </section>
-  <section class="projects">
-    <h1>Projects</h1>
-    <div class="project">
-      <a href="https://coetus-beta.herokuapp.com/" class="button-link">
-        <img class="button-link__image " src="images/coetus.jpg" alt=" ">
-        <div class="button-link__overlay ">
-          <h3>Coetus</h3>
+  <body>
+    <header class="header">
+      <h2 class="header__name">Patryk Hołysz</h2>
+      <h1 class="header__heading--big">H-DES</h1>
+    </header>
+    <section class="expertise">
+      <h1>My expertise</h1>
+      <div class="card-container">
+        <div class="card">
+          <img src="images/tv.svg" alt="tv icon" class="card__icon" />
+          <h2>Frontend</h2>
+          <ul class="card__list">
+            <li class="card__li">HTML</li>
+            <li class="card__li">CSS</li>
+            <li class="card__li">Sass</li>
+            <li class="card__li">JS (ES6)</li>
+            <li class="card__li">React</li>
+            <li class="card__li">Redux</li>
+          </ul>
         </div>
-      </a>
-      <p class="project__description">
-        I am an originator and founder of Coetus. It is a startup that focuses on connecting programmers from around the world. It
-        gives them a possibility to set up a project, find collaborators and start creating amazing things together. I have
-        build back-end using Node.js and Express and major part of front-end using such techologies as React, Redux and React-router.
-        Coetus is a lauerate of the "Set Up Your Start-up" competition organized by Academic Business Incubator of Poznan
-        University of Technology and Faculty of Computing at Poznan University of Technology. It is currently in the testing
-        phase.
-      </p>
-    </div>
-    <div class="project">
-      <a href="https://emaily-h-des.herokuapp.com" class="button-link">
-        <img class="button-link__image " src="images/buttonimg004.jpg" alt=" ">
-        <div class="button-link__overlay ">
-          <h3>Emaily</h3>
+        <div class="card">
+          <img
+            src="images/storage.svg"
+            alt="database icon"
+            class="card__icon"
+          />
+          <h2>Backend</h2>
+          <ul class="card__list">
+            <li class="card__li">Node.js</li>
+            <li class="card__li">Express</li>
+            <li class="card__li">MongoDB</li>
+          </ul>
         </div>
-      </a>
-      <p class="project__description">
-        Emaily is an app built with React, Redux & Node.js. It allows user to create a campaign and send emails to a provided group
-        of clients. It was styled using Materialize CSS;
-      </p>
-    </div>
-    <div class="project">
-      <a href="https://github.com/h-des/V-layout" class="button-link">
-        <img class="button-link__image " src="images/buttonimg002.jpg" alt=" ">
-        <div class="button-link__overlay ">
-          <h3>V_Layout</h3>
+        <div class="card">
+          <img src="images/bug.svg" alt="bug icon" class="card__icon" />
+          <h2>Testing</h2>
+          <ul class="card__list">
+            <li class="card__li">Jest</li>
+            <li class="card__li">Enzyme</li>
+          </ul>
         </div>
-      </a>
-      <p class="project__description">
-        A website recreated from a template from freebiesbug.com using SCSS.
+      </div>
+    </section>
+    <section class="projects">
+      <h1>Projects</h1>
+      <div class="project">
+        <a href="https://github.com/h-des/92-hotels" class="button-link">
+          <img
+            class="button-link__image "
+            src="images/buttonImg003.JPG"
+            alt="92 hotels website screenshot"
+          />
+          <div class="button-link__overlay "><h3>92 hotels</h3></div>
+        </a>
+        <p class="project__description">
+          92-hotels is a fake app that allows you to find a room in a hotel,
+          check availability and book it. It's a node + express + mongoose
+          server build from scratch connected to a mongoDB database populated
+          with data from external APIs and random data from faker.js and a
+          client-side app built with React and Redux.<br />
+        </p>
+      </div>
+      <div class="project">
+        <a href="https://coetus-beta.herokuapp.com/" class="button-link">
+          <img
+            class="button-link__image "
+            src="images/buttonImg001.JPG"
+            alt="coetus website screenshot"
+          />
+          <div class="button-link__overlay "><h3>Coetus</h3></div>
+        </a>
+        <p class="project__description">
+          I am an originator and founder of Coetus. It is a startup that focuses
+          on connecting programmers from around the world. It gives them a
+          possibility to set up a project, find collaborators and start creating
+          amazing things together. I have build back-end using Node.js and
+          Express and major part of front-end using such techologies as React
+          and Redux. Coetus is a lauerate of the "Set Up Your Start-up"
+          competition organized by Academic Business Incubator of Poznan
+          University of Technology and Faculty of Computing at Poznan University
+          of Technology. It is currently in the testing phase.
+        </p>
+      </div>
+      <div class="project">
+        <a href="https://emaily-h-des.herokuapp.com" class="button-link">
+          <img
+            class="button-link__image "
+            src="images/buttonImg002.JPG"
+            alt="emaily website screenshot"
+          />
+          <div class="button-link__overlay "><h3>Emaily</h3></div>
+        </a>
+        <p class="project__description">
+          Emaily is an app built with React, Redux & Node.js. It allows user to
+          create a campaign and send emails to a provided group of clients. It
+          was styled using Materialize CSS;
+        </p>
+      </div>
+      <div class="project">
+        <a href="https://github.com/h-des/V-layout" class="button-link">
+          <img
+            class="button-link__image "
+            src="images/buttonImg005.JPG"
+            alt="v-layout website screenshot"
+          />
+          <div class="button-link__overlay "><h3>V_Layout</h3></div>
+        </a>
+        <p class="project__description">
+          Simple website recreated from a template from freebiesbug.com using
+          SCSS.
+        </p>
+      </div>
+      <div class="project">
+        <a
+          href="https://github.com/h-des/new-providence-layout"
+          class="button-link"
+        >
+          <img
+            class="button-link__image "
+            src="images/buttonImg004.JPG"
+            alt="New providence website screenshot"
+          />
+          <div class="button-link__overlay ">
+            <h3>New Providence Layout</h3>
+          </div>
+        </a>
+        <p class="project__description">
+          Simple website recreated from a template from craftwork.com using
+          SCSS.
+        </p>
+      </div>
+    </section>
+    <section class="quote">
+      <hr class="quote__hr" />
+      <p>
+        <i
+          >"Debugging is like being the detective in a crime movie where you are
+          also the murderer."
+        </i>
       </p>
-    </div>
-    <div class="project">
-      <a href="https://github.com/h-des/new-providence-layout" class="button-link">
-        <img class="button-link__image " src="images/buttonimg001.jpg" alt=" ">
-        <div class="button-link__overlay ">
-          <h3>New Providence Layout</h3>
-        </div>
-      </a>
-      <p class="project__description">
-        A website recreated from a template from craftwork.com using SCSS.
-      </p>
-    </div>
-    <div class="project">
-      <a href="https://h-des.github.io/hotel-website/" class="button-link">
-        <img class="button-link__image " src="images/buttonimg003.jpg" alt=" ">
-        <div class="button-link__overlay ">
-          <h3>Hotel webiste</h3>
-        </div>
-      </a>
-      <p class="project__description">
-        A simple hotel website created using React & React-router. Main purpose for creatig this webiste was testing and learing
-        React-router & inline styles for React.
-      </p>
-    </div>
-  </section>
-  <section class="quote">
-    <hr class="quote__hr"/>
-    <p>
-      <i>"Debugging is like being the detective in a crime movie where you are also the murderer." </i>
-    </p>
-    <h2> Filipe Fortes</h2>
-  </section>
-  <footer class="footer">
-    <p>© H-DES 2018</p>
-    <div>
-      <a class="footer__link" href="https://github.com/h-des">GitHub</a>
-      <a class="footer__link" href="https://twitter.com/holdysz">Twitter</a>
-    </div>
-  </footer>
-</body>
-
+      <h2>Filipe Fortes</h2>
+    </section>
+    <footer class="footer">
+      <p>© H-DES 2018</p>
+      <div>
+        <a class="footer__link" href="https://github.com/h-des">GitHub</a>
+        <a class="footer__link" href="https://twitter.com/holdysz">Twitter</a>
+      </div>
+    </footer>
+  </body>
 </html>
